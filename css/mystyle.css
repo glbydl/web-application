@@ -1,0 +1,426 @@
+* {
+	box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+	/* For mobile phones: */
+	[class*="col-sm-"] {
+		padding-left: 0px;
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	.col-sm-3.streetaddress {
+		width: 90%;
+		margin-left: 5%;
+		margin-left: 5%;
+	}
+
+	.col-sm-2.city {
+		width: 90%;
+		margin-left: 5%;
+		margin-left: 5%;
+	}
+
+	.col-sm-2.state {
+		width: 90%;
+		margin-left: 5%;
+		margin-left: 5%;
+	}
+
+	.col-sm-3.degree {
+		width: 90%;
+		margin-left: 5%;
+		margin-left: 5%;
+	}
+
+	.col-sm-2.search-clear {
+		margin-top: 30px;
+		margin-left: 25%;
+	}
+
+	#doSearch, #doClear {
+		width: 35%;
+	}
+
+	.form-inline.disclaimer {
+		width: 80%;
+		font-size: 8px;
+		text-align: center;
+	}
+
+	.row.header-now {
+		background-color: #FF7575;
+		width: 100%;
+	}
+
+	.col-sm-4.weather-image {
+		text-align: center;
+	}
+
+	.col-sm-8.weather-header {
+		text-align: center;
+	}
+
+	table#data-now {
+		width: 100%;
+		height: 280px;
+	}
+
+	.col-sm-1.next-7-days.extra {
+		display: none;
+	}
+
+	.col-sm-1.next-7-days {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.image-next-7-days {
+		width: 80px;
+		height: 80px;
+	}
+
+	#modal-week {
+		font-size: 20px;
+	}
+
+	#modal-summary {
+		font-size: 20px;
+		color: #FFCC00;
+	}
+
+	.modal-title {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	[class*="col-sm-"] {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.col-sm-3.streetaddress {
+		padding-left: 1%;
+	}
+
+	.col-sm-2.city {
+		padding-left: 0.5%;
+	}
+
+	.col-sm-2.state {
+		padding-left: 0.5%;
+	}
+
+	.col-sm-3.degree {
+		padding-left: 0.5%;
+		width: 20%;
+	}
+
+	.col-sm-2.search-clear {
+		margin-left: 2.5%;
+		margin-top: 35px;
+		text-align: right;
+	}
+
+	#doSearch, #doClear {
+		width: 45%;
+	}
+
+	.form-inline.disclaimer {
+		margin-left: -20px;
+		font-size: 8px;
+		text-align: right;
+	}
+
+	.row.header-now {
+		background-color: #FF7575;
+	}
+
+	.col-sm-4.weather-image {
+		text-align: center;
+	}
+
+	.col-sm-8.weather-header {
+		text-align: center;
+	}
+
+	table#data-now {
+		width: 100%;
+		height: 280px;
+	}
+
+	.next-7-days-frame {
+		background-color: #404040;
+	}
+
+	.col-sm-1.next-7-days.extra {
+		display: block;
+	}
+
+	.col-sm-1.next-7-days {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.image-next-7-days {
+		width: 60px;
+		height: 60px;
+	}
+
+	#modal-week {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	#modal-summary {
+		font-size: 20px;
+		color: #FFCC00;
+		font-weight: bold;
+	}
+
+	.modal-title {
+		font-size: 15px;
+		font-weight: bold;
+	}
+}
+
+body {
+	background: url(http://cs-server.usc.edu:45678/hw/hw8/images/bg.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.row.main-area {
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-sm-3.streetaddress {
+	margin-top: 10px;
+}
+
+.col-sm-2.city, .col-sm-2.state {
+	margin-top: 10px;
+}
+
+.col-sm-3.degree {
+	margin-top: 10px;
+}
+
+.condition-label {
+	color: #FFFFFF;
+	font-size: 15px;
+}
+
+.required {
+	color: #FF0000;
+}
+
+.separate-line {
+	width: 80%;
+}
+
+.result-area {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#myTab {
+	display: none;
+}
+
+#right-now-left-info {
+	display: none;
+}
+
+.nav-tabs > li > a {
+	background-color: #FFFFFF;
+	color: #0066FF;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	background-color: #0066FF;
+	color: #FFFFFF;
+}
+
+.error {
+	color: #FF0000;
+}
+
+#weather-image {
+	margin-top: 5px;
+}
+
+#header-summary {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#header-temperature {
+	color: #FFFFFF;
+	font-size: 60px;
+}
+
+#header-unit {
+	color: #FFFFFF;
+	font-size: 20px;
+	vertical-align: text-top;
+	padding-top: 5px;
+}
+
+#low-high {
+	margin-top: -10px;
+}
+
+#low-temperature {
+	color: #000099;
+}
+
+#high-temperature {
+	color: #006600;
+}
+
+#data-now .odd-line {
+	background-color: #FFFFFF;
+}
+
+#data-now .even-line {
+	background-color: #FFCCFF;
+}
+
+#data-now .title {
+	width: 60%;
+	text-indent: 10px;
+}
+
+#result-map {
+	width: 100%;
+	height: 405px;
+}
+
+.table.next-24-hours {
+	width: 100%;
+}
+
+.table.next-24-hours th {
+	width: 20%;
+	text-align: center;
+}
+
+.next-24-hours-title {
+	background-color: #3366FF;
+	color: #FFFFFF;
+}
+
+.table.next-24-hours tr.normal {
+	background-color: #FFFFFF;
+}
+
+.table.next-24-hours tr.abnormal {
+	background-color: #C9C9C9;
+}
+
+.table.next-24-hours td {
+	width: 20%;
+	text-align: center;
+}
+
+.table.next-24-hours-detail {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.next-24-hours-detail th {
+	width: 25%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.next-24-hours-detail td {
+	background-color: #C9C9C9;
+	width: 25%;
+	text-align: center;
+}
+
+.next-7-days-frame {
+	width: 100%;
+	height: 400px;
+}
+
+.col-sm-1.next-7-days {
+	border-radius: 20px;
+	height: 380px;
+	margin-top: 10px;
+}
+
+.table-next-7-days {
+	text-align: center;
+}
+
+.table-next-7-days {
+	width: 100%;
+}
+
+.col-sm-1.next-7-days.d1 {
+	background-color: #3366FF;
+}
+
+.col-sm-1.next-7-days.d2 {
+	background-color: #FF3333;
+}
+
+.col-sm-1.next-7-days.d3 {
+	background-color: #FFA347;
+}
+
+.col-sm-1.next-7-days.d4 {
+	background-color: #97E300;
+}
+
+.col-sm-1.next-7-days.d5 {
+	background-color: #AC82FF;
+}
+
+.col-sm-1.next-7-days.d6 {
+	background-color: #FF9999;
+}
+
+.col-sm-1.next-7-days.d7 {
+	background-color: #FF0BFF;
+}
+
+.next-7-days.white {
+	color: #FFFFFF;
+}
+
+.next-7-days.white.bold {
+	font-weight: bold;
+	line-height: 250%;
+}
+
+.next-7-days.white.bold.large {
+	font-size: 30px;
+}
+
+#facebook-button {
+	background: none;
+	border: none;
+	position: absolute;
+	right: 3px;
+	bottom: 3px;
+}
